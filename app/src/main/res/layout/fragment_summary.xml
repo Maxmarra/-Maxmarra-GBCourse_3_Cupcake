@@ -33,6 +33,16 @@
                 android:focusable="true"
                 android:orientation="vertical">
 
+
+                <TextView
+                    android:text="@string/quantity"
+                    android:id="@+id/quantity"
+                    style="@style/Widget.Cupcake.TextView.OrderSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/order_summary_margin"
+                    tools:text="6 cupcakes" />
+
                 <TextView
                     android:id="@+id/quantity_label"
                     style="@style/Widget.Cupcake.TextView.OrderSummary"
@@ -42,13 +52,7 @@
                     android:textAllCaps="true"
                     android:textStyle="normal" />
 
-                <TextView
-                    android:id="@+id/quantity"
-                    style="@style/Widget.Cupcake.TextView.OrderSummary"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/order_summary_margin"
-                    tools:text="6 cupcakes" />
+
 
                 <View
                     android:id="@+id/divider1"

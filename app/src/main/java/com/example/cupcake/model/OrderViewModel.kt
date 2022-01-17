@@ -57,6 +57,7 @@ class OrderViewModel : ViewModel() {
         val formatter = SimpleDateFormat("E MMM d", Locale.getDefault())
         val calendar = Calendar.getInstance()
 
+
         repeat(4) {
             options.add(formatter.format(calendar.time))
             calendar.add(Calendar.DATE, 1)
@@ -67,7 +68,7 @@ class OrderViewModel : ViewModel() {
     fun resetOrder() {
         _quantity.value = 0
         _flavor.value = ""
-        _date.value = dateOptions[0]
+        _date.value = dateOptions[1]
         _price.value = 0.0
     }
 
