@@ -56,9 +56,10 @@ class SummaryFragment : Fragment() {
         val orderSummary = getString(
 
             R.string.order_details,
-            //sharedViewModel.quantity.value.toString(),
+
             resources.getQuantityString(R.plurals.cupcakes,
                 numberOfCupcakes, numberOfCupcakes),
+            //sharedViewModel.quantity.value.toString(),
             sharedViewModel.flavor.value.toString(),
             sharedViewModel.date.value.toString(),
             sharedViewModel.price.value.toString()
@@ -69,6 +70,10 @@ class SummaryFragment : Fragment() {
             .putExtra(Intent.EXTRA_TEXT, orderSummary)
             .putExtra(Intent.EXTRA_EMAIL, "blskdf@gmail.com")
 
+        //However, before launching an activity with this intent,
+        // check to see if there's an app that could even handle it.
+        // This check will prevent the Cupcake app from crashing
+        // if there's no app to handle the intent, making your code safer.
         if (activity?.packageManager?.resolveActivity(intent, 0) != null) {
             startActivity(intent)
         }
