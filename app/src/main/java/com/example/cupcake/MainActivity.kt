@@ -7,3 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
  */
 class MainActivity :
     AppCompatActivity(R.layout.activity_main)
+
+// IT'S THA SAME AS THIS:
+//class MainActivity : AppCompatActivity() {
+//
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.activity_main)
+//    }
+//}
