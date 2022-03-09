@@ -6,16 +6,16 @@ import androidx.lifecycle.ViewModel
 
 class OrderViewModel : ViewModel() {
 
-    private var _quantity = MutableLiveData<Int>(0)
+    private var _quantity = MutableLiveData(0)
     val quantity: LiveData<Int> = _quantity
 
-    private val _flavor = MutableLiveData<String>("")
+    private val _flavor = MutableLiveData("")
     val flavor: LiveData<String> = _flavor
 
-    private val _date = MutableLiveData<String>("")
+    private val _date = MutableLiveData("")
     val date: LiveData<String> = _date
 
-    private val _price = MutableLiveData<Double>(0.0)
+    private val _price = MutableLiveData(0.0)
     val price: LiveData<Double> = _price
 
     fun setQuantity(numberCupcakes: Int) {
