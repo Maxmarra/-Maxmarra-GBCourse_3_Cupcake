@@ -35,7 +35,7 @@ class StartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+// You can access the fragment instance inside the fragment using 'this' keyword.
         binding?.startFragment = this
 
 //        binding?.apply {

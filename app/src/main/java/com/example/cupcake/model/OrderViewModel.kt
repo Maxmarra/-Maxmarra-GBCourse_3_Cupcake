@@ -55,11 +55,12 @@ class OrderViewModel : ViewModel() {
         val options = mutableListOf<String>()
 
         val formatter = SimpleDateFormat("E MMM d", Locale.getDefault())
+        //This variable will contain the current date and time
         val calendar = Calendar.getInstance()
-
 
         repeat(4) {
             options.add(formatter.format(calendar.time))
+            //increment the calendar by 1 day
             calendar.add(Calendar.DATE, 1)
         }
         return options
@@ -68,14 +69,15 @@ class OrderViewModel : ViewModel() {
     fun resetOrder() {
         _quantity.value = 0
         _flavor.value = ""
-        _date.value = dateOptions[1]
+        _date.value = dateOptions[0]
         _price.value = 0.0
     }
 
     private fun updatePrice() {
         var calculatedPrice = (quantity.value ?: 0) * PRICE_PER_CUPCAKE
 
-        // If the user selected the first option (today) for pickup, add the surcharge
+        // If the user selected the first option
+        // (today) for pickup, add the surcharge
         if (dateOptions[0] == _date.value) {
             calculatedPrice += PRICE_FOR_SAME_DAY_PICKUP
         }

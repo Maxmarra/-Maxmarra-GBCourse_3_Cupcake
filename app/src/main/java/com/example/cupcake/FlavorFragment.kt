@@ -36,8 +36,10 @@ class FlavorFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.apply {
-            lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
+            lifecycleOwner = viewLifecycleOwner
+            //You will use this keyword differently here, because inside the binding?.apply block,
+            // the keyword 'this' refers to the binding instance, not the fragment instance.
             flavorFragment = this@FlavorFragment
 
         }
