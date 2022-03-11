@@ -30,3 +30,10 @@
         <item quantity="other">%d cupcakes</item>
     </plurals>
 </resources>
+
+<!--    order_details is a string resource with 4 different format arguments in it,
+which are placeholders for the actual quantity of cupcakes, desired flavor,
+desired pickup date, and total price. The arguments are numbered from 1 to 4
+with the syntax %1 to %4. -->
+<!--    The type of argument is also specified
+($s means a string is expected here).-->

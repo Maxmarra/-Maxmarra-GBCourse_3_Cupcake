@@ -50,13 +50,19 @@ class SummaryFragment : Fragment() {
     fun sendOrder() {
 
         //Toast.makeText(activity, "Send Order", Toast.LENGTH_SHORT).show()
-
+        //В нашем приложении всегда минимум один кекс,
+        // но в реальном может быть установлено с нуля
         val numberOfCupcakes = sharedViewModel.quantity.value ?: 0
 
         val orderSummary = getString(
 
             R.string.order_details,
-
+//Note: When calling getQuantityString(),
+// you need to pass in the quantity twice
+// because the first quantity parameter is used
+// to select the correct plural string.
+// The second quantity parameter is used
+// in the %d placeholder of the actual string resource.
             resources.getQuantityString(R.plurals.cupcakes,
                 numberOfCupcakes, numberOfCupcakes),
             //sharedViewModel.quantity.value.toString(),
