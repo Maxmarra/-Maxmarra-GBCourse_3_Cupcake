@@ -23,7 +23,8 @@ class StartFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val fragmentBinding = FragmentStartBinding.inflate(inflater, container, false)
+        val fragmentBinding = FragmentStartBinding.inflate(
+            inflater, container, false)
         binding = fragmentBinding
         return fragmentBinding.root
     }
