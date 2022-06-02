@@ -4,6 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".StartFragment">
+
+    <data>
+        <variable
+            name="startFragment"
+            type="com.example.cupcake.StartFragment" />
+    </data>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -33,6 +40,8 @@
                 android:textColor="@color/material_on_background_emphasis_medium" />
 
             <Button
+                android:onClick="@{() -> startFragment.orderCupcake(1)}"
+
                 android:id="@+id/order_one_cupcake"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -42,6 +51,8 @@
                 android:text="@string/one_cupcake" />
 
             <Button
+                android:onClick="@{() -> startFragment.orderCupcake(6)}"
+
                 android:id="@+id/order_six_cupcakes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,6 +62,8 @@
                 android:text="@string/six_cupcakes" />
 
             <Button
+                android:onClick="@{() -> startFragment.orderCupcake(12)}"
+
                 android:id="@+id/order_twelve_cupcakes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
