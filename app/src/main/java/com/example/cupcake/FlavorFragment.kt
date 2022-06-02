@@ -16,6 +16,8 @@ import com.example.cupcake.model.OrderViewModel
  */
 class FlavorFragment : Fragment() {
 
+    lateinit var any: Any
+
     private val sharedViewModel: OrderViewModel by activityViewModels()
 
     // Binding object instance corresponding to the fragment_flavor.xml layout
