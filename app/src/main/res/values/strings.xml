@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <string name="app_name">Cupcake</string>
-    <string name="order_cupcakes">Order Cupcakes</string>
-    <string name="one_cupcake">One Cupcake</string>
-    <string name="six_cupcakes">Six Cupcakes</string>
-    <string name="twelve_cupcakes">Twelve Cupcakes</string>
-    <string name="choose_flavor">Choose Flavor</string>
-    <string name="vanilla">Vanilla</string>
-    <string name="chocolate">Chocolate</string>
-    <string name="red_velvet">Red Velvet</string>
-    <string name="salted_caramel">Salted Caramel</string>
-    <string name="coffee">Coffee</string>
-    <string name="special_flavor">Special Flavor</string>
-    <string name="cancel">Cancel</string>
-    <string name="next">Next</string>
-    <string name="choose_pickup_date">Choose Pickup Date</string>
-    <string name="order_summary">Order Summary</string>
-    <string name="send">Send Order to Another App</string>
-    <string name="quantity">Quantity</string>
-    <string name="flavor">Flavor</string>
-    <string name="pickup_date">Pickup date</string>
-    <string name="subtotal_price">Subtotal %s</string>
-    <string name="total_price">Total %s</string>
-    <string name="new_cupcake_order">New Cupcake Order</string>
-    <string name="order_details">Quantity: %1$s cupcakes \n Flavor: %2$s \nPickup date: %3$s \n
-        Total: %4$s \n\n Thank you!</string>
+    <string name="app_name">Кекс</string>
+    <string name="order_cupcakes">Заказать кексы</string>
+    <string name="one_cupcake">1 кекс</string>
+    <string name="six_cupcakes">6 кексов</string>
+    <string name="twelve_cupcakes">12 кексов</string>
+    <string name="choose_flavor">Выбери вкус</string>
+    <string name="vanilla">Ванильный</string>
+    <string name="chocolate">Шоколадный</string>
+    <string name="red_velvet">Красный бархат</string>
+    <string name="salted_caramel">Соленая карамель</string>
+    <string name="coffee">Кофе</string>
+    <string name="special_flavor">Специальный вкус</string>
+    <string name="cancel">Отменить</string>
+    <string name="next">Дальше</string>
+    <string name="choose_pickup_date">Выбери дату</string>
+    <string name="order_summary">Итоговый заказ</string>
+    <string name="send">Отправить заказ в другое приложение</string>
+    <string name="quantity">Кол-во</string>
+    <string name="flavor">Вкус</string>
+    <string name="pickup_date">Дата</string>
+    <string name="subtotal_price">Подытог %s</string>
+    <string name="total_price">Итого %s</string>
+    <string name="new_cupcake_order">Новый заказ кексов</string>
+    <string name="order_details">Кол-во: %1$s кексов \n Вкус: %2$s \nДата: %3$s \n
+        Итого: %4$s \n\n Спасибо!</string>
 </resources>
